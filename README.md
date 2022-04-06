@@ -91,7 +91,7 @@ You can view the project layout through the image and link below:
 
 <p align="center">
   <a href="https://andromeda.rocketseat.dev/?path=/story/docs-colors--page">
-    <img src="./public/favicon.ico" width="200" alt="Project layout">
+    <img src="./.github/rocketseat.jpg" width="700" alt="Project layout">
     <p align="center">@storybook</p>
   </a>
 </p>
