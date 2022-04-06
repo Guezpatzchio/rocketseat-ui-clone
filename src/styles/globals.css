@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--colors-grey-900);
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--colors-grey-900);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4d4d57;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
