@@ -4,16 +4,31 @@ import {
   NavigationMenuContentCSS,
   NavigationMenuItemCSS,
   NavigationMenuLinkCSS,
-  NavigationMenuTriggerCSS
+  NavigationMenuTriggerCSS,
 } from "@packages/styles";
 import * as NavigationMenuComponent from "@radix-ui/react-navigation-menu";
 import { styled } from "@packages/web";
 
-const StyledNavigationMenuList = styled(NavigationMenuComponent.List, NavigationMenuListCSS);
-const StyledNavigationMenuItem = styled(NavigationMenuComponent.Item, NavigationMenuItemCSS);
-const StyledNavigationMenuTrigger = styled(NavigationMenuComponent.Trigger, NavigationMenuTriggerCSS);
-const StyledNavigationMenuContent = styled(NavigationMenuComponent.Content, NavigationMenuContentCSS);
-const StyledNavigationMenuLink = styled(NavigationMenuComponent.Link, NavigationMenuLinkCSS);
+const StyledNavigationMenuList = styled(
+  NavigationMenuComponent.List,
+  NavigationMenuListCSS
+);
+const StyledNavigationMenuItem = styled(
+  NavigationMenuComponent.Item,
+  NavigationMenuItemCSS
+);
+const StyledNavigationMenuTrigger = styled(
+  NavigationMenuComponent.Trigger,
+  NavigationMenuTriggerCSS
+);
+const StyledNavigationMenuContent = styled(
+  NavigationMenuComponent.Content,
+  NavigationMenuContentCSS
+);
+const StyledNavigationMenuLink = styled(
+  NavigationMenuComponent.Link,
+  NavigationMenuLinkCSS
+);
 const StyledNavigationMenuIndicator = styled(
   NavigationMenuComponent.Indicator,
   ""
@@ -40,16 +55,8 @@ export const NavigationMenu = ({ children, ...props }: NavigationMenuProps) => {
   );
 };
 
-export type NavigationMenuItemProps =
-  NavigationMenuComponent.NavigationMenuItemProps &
-    React.ComponentProps<typeof StyledNavigationMenuItem>;
-
-export const NavigationMenuItem = ({
-  children,
-  ...props
-}: NavigationMenuItemProps) => {
-  return <StyledNavigationMenuItem {...props}>{children}</StyledNavigationMenuItem>;
-};
+export const NavigationMenuItem = StyledNavigationMenuItem;
+NavigationMenuItem.className = "NavigationMenuItem";
 
 export const NavigationMenuTrigger = StyledNavigationMenuTrigger;
 NavigationMenuTrigger.displayName = "NavigationMenuTrigger";

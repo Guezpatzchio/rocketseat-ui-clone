@@ -23,6 +23,7 @@ export const Header = styled("header", {
     alignItems: "center",
 
     ".enterButton": {
+      $$color: "$colors$white",
       marginRight: "$4",
 
       "&:hover": {
@@ -53,9 +54,10 @@ export const Header = styled("header", {
 });
 
 export const Main = styled("main", {
-  "section": {
-
-  }
+  section: {
+    display: "flex",
+    justifyContent: "center",
+  },
 });
 
 export const HeroSection = styled("section", {
@@ -66,6 +68,4 @@ export const HeroSection = styled("section", {
 
   display: "flex",
   flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
 });

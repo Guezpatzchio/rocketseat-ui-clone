@@ -3,6 +3,10 @@ import {
   ModalContent,
   ModalTrigger,
   ModalWrapper,
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
 } from "@packages/react";
 import { Button } from "@packages/react";
 import {
@@ -12,8 +16,10 @@ import {
   NavigationMenuLink,
   NavigationMenuTrigger,
 } from "@packages/react";
-import { HeroSectionContent } from "components/HeroSectionContent";
+import { HeroSectionContent } from "components/HeroSection";
 import { NavigationMenuCard } from "components/NavigationMenuCard";
+import { Slogan } from "components/Slogan";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactSVG } from "react-svg";
@@ -23,6 +29,9 @@ import { Header, HeroSection, Main } from "styles/pages/home";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Rocketseat · Evolua rápido como a tecnologia.</title>
+      </Head>
       <Header>
         <div className="wrapper">
           <Link href={"/"}>
@@ -85,9 +94,29 @@ export default function Home() {
       </Header>
       <Main>
         <HeroSection>
-          <Image src={"/images/hero.webp"} layout={"fill"} objectFit={"cover"} />
+          <Image
+            src={"/images/hero.webp"}
+            layout={"fill"}
+            objectFit={"cover"}
+            alt={"Hero Section Background"}
+            placeholder={"blur"}
+            blurDataURL={"/images/hero.webp"}
+          />
           <HeroSectionContent />
         </HeroSection>
+        <Slogan />
+        <section>
+          <Tabs defaultValue="ignite" orientation="vertical">
+            <TabsList aria-label="courses">
+              <TabsTrigger value="ignite">Para você se aperfeiçoar e acelerar</TabsTrigger>
+              <TabsTrigger value="expertsclub">Para continuar avançando</TabsTrigger>
+              <TabsTrigger value="discover">Para você começar</TabsTrigger>
+            </TabsList>
+            <TabsContent value="ignite">Tab one content</TabsContent>
+            <TabsContent value="expertsclub">Tab two content</TabsContent>
+            <TabsContent value="discover">Tab three content</TabsContent>
+          </Tabs>
+        </section>
       </Main>
 
       {/* <ModalComponent>

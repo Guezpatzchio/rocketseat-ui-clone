@@ -29,3 +29,12 @@ export {
   NavigationMenuLinkCSS,
   NavigationMenuTriggerCSS,
 };
+
+import {
+  TabRoot as TabRootCSS,
+  TabsContent as TabsContentCSS,
+  TabsList as TabsListCSS,
+  TabsTrigger as TabsTriggerCSS,
+} from "./src/components/Tabs";
+
+export { TabRootCSS, TabsContentCSS, TabsListCSS, TabsTriggerCSS };

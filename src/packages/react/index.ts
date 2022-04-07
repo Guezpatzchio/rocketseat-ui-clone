@@ -26,3 +26,12 @@ export {
   NavigationMenuLink,
   NavigationMenuTrigger,
 };
+
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "./src/components/Tabs";
+
+export { Tabs, TabsContent, TabsList, TabsTrigger };

@@ -1,6 +1,6 @@
 import { styled } from "@packages/web";
 
-export const NavigationMenuCardRoot = styled("li", {
+export const Root = styled("li", {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

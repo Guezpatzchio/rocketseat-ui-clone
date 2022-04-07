@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ReactSVG } from "react-svg";
-import { NavigationMenuCardRoot } from "./styles";
+import * as NavigationMenuCardComponent from "./styles";
 
 type NavigationMenuCardProps = {
   icon: string;
@@ -14,7 +14,7 @@ export function NavigationMenuCard({
   href,
 }: NavigationMenuCardProps) {
   return (
-    <NavigationMenuCardRoot>
+    <NavigationMenuCardComponent.Root>
       <Link href={href}>
         <a>
           <h2>
@@ -23,6 +23,6 @@ export function NavigationMenuCard({
           <p>{text}</p>
         </a>
       </Link>
-    </NavigationMenuCardRoot>
+    </NavigationMenuCardComponent.Root>
   );
 }

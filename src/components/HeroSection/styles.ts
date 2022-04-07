@@ -1,8 +1,7 @@
 import { keyframes, styled } from "@packages/web";
 
-export const HeroSectionRoot = styled("div", {
-  top: "0",
-  left: "0",
+export const Root = styled("div", {
+  position: "relative",
   width: "100%",
   maxWidth: " 1120px",
   margin: "0 auto",
@@ -11,11 +10,10 @@ export const HeroSectionRoot = styled("div", {
 
   display: "flex",
   flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
+  justifyContent: "space-between",
 });
 
-export const HeroSectionWrapper = styled("div", {
+export const Content = styled("div", {
   width: "100%",
   marginTop: "122px",
 
@@ -41,7 +39,7 @@ export const HeroSectionWrapper = styled("div", {
   },
 });
 
-export const HeroSectionVideo = styled("video", {
+export const Video = styled("video", {
   display: "flex",
   padding: "unset",
   width: "100%",
@@ -54,15 +52,34 @@ export const HeroSectionVideo = styled("video", {
   zIndex: "1",
   position: "absolute",
   bottom: "0",
-  transform: "translate(0,50%)",
+  transform: "translate(calc(50vw - 50%),50%)",
 });
 
 const waveAnimation = keyframes({
-  "0%": {},
-  "100%": {},
+  "30%": {
+    transform: "rotate(0deg)",
+  },
+  "40%": {
+    transform: "rotate(15deg)",
+  },
+  "50%": {
+    transform: "rotate(0deg)",
+  },
+  "60%": {
+    transform: "rotate(15deg)",
+  },
+  "70%": {
+    transform: "rotate(0deg)",
+  },
+  "80%": {
+    transform: "rotate(15deg)",
+  },
+  "90%": {
+    transform: "rotate(0deg)",
+  },
 });
 
-export const HeroSectionSpan = styled("span", {
+export const Span = styled("span", {
   fontSize: "18px",
   lineHeight: "21px",
   marginBottom: "16px",
@@ -77,11 +94,11 @@ export const HeroSectionSpan = styled("span", {
     width: "24px",
     height: "24px",
     transformOrigin: "70% 70%",
-    animation: `${waveAnimation} 2.5s infinite`,
+    animation: `${waveAnimation} 2.4s ease-in infinite`,
   },
 });
 
-export const HeroSectionTitle = styled("h1", {
+export const Title = styled("h1", {
   maxWidth: "680px",
   fontSize: "56px",
   lineHeight: "60px",
@@ -91,7 +108,7 @@ export const HeroSectionTitle = styled("h1", {
   fontWeight: 700,
 });
 
-export const HeroSectionSubtitle = styled("h2", {
+export const Subtitle = styled("h2", {
   maxWidth: "472px",
   fontSize: "16px",
   lineHeight: "26px",
