@@ -34,7 +34,7 @@ export const TabsTrigger = css({
   "&[aria-selected=true]": {
     border: "unset",
     borderTop: "2px solid $rocketseat-mid",
-    background: "$shape",
+    background: "$grey-800",
     fontWeight: "700",
     color: "$grey-100",
   },
