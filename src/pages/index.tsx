@@ -110,65 +110,96 @@ export default function Home() {
           <Tabs defaultValue="ignite" orientation="vertical">
             <TabsList aria-label="courses">
               <TabsTrigger value="ignite">
-                Para você se aperfeiçoar e acelerar
+                <ReactSVG src={"/icons/ignite-reduced.svg"} />
               </TabsTrigger>
               <TabsTrigger value="expertsclub">
-                Para continuar avançando
+                <ReactSVG src={"/icons/expertsclub-reduced.svg"} />
               </TabsTrigger>
-              <TabsTrigger value="discover">Para você começar</TabsTrigger>
+              <TabsTrigger value="discover">
+                <ReactSVG src={"/icons/discover-reduced.svg"} />
+              </TabsTrigger>
+              <TabsTrigger value="explorer">
+                <ReactSVG src={"/icons/explorer-reduced.svg"} />
+              </TabsTrigger>
             </TabsList>
             <TabsContent value="ignite">
               <TabCourses
                 href={"#"}
                 colors={{
-                  background: "$colors$success-light",
-                  color: "$colors$grey-900",
+                  background: "$colors$ignite-mid",
                 }}
-                prerequisites={"<strong>Pré-requisito: </strong>ter uma base sólida no desenvolvimento web."}
+                prerequisites={
+                  "<strong>Pré-requisito: </strong>ter uma base sólida no desenvolvimento web."
+                }
                 text={
-                  "O Ignite é um programa de aceleração profissional com treinamentos certificados e reconhecidos pelo mercado. Domine Elixir, Flutter, Node.js, React ou React Native e prepare-se para as melhores oportunidades."
+                  "Especialize-se em stacks específicas amplamente utilizadas e valorizadas no mercado como React, React Native, Node.js e Elixir."
                 }
                 title={
-                  "Acelere na carreira através de uma tecnologia específica"
+                  "Programa de especialização para acelerar sua carreira"
                 }
-                logo={"/images/ignite.webp"}
-                rocketUrl={"/images/igniterocket.svg"}
+                imageUrl={"/images/dev-coding-ignite.webp"}
+                btnText={"CONHECER O IGNITE"}
               />
             </TabsContent>
             <TabsContent value="expertsclub">
-            <TabCourses
+              <TabCourses
                 href={"#"}
                 colors={{
                   background: "#db3a2c",
-                  color: "$colors$white",
                 }}
-                prerequisites={"Aulas avançadas para devs que nunca param de evoluir."}
+                prerequisites={
+                  "Aulas avançadas para devs que nunca param de evoluir."
+                }
                 text={
-                  "O Experts Club é um clube de aprendizado contínuo com aulas práticas e específicas em que você vai aprender através das experiências acumuladas no mercado por grandes devs. Reunimos no clube as mais diversas tecnologias."
+                  "O Experts Clube é o primeiro clube de aprendizado contínuo em formato de strimeo do Brasil voltado para o mercado de tecnologia."
                 }
                 title={
-                  "A única forma de acompanhar a tecnologia é evoluindo com ela"
+                  "Programa de especialização para acelerar sua carreira"
                 }
-                logo={"/images/expertsclub.webp"}
-                rocketUrl={"/images/expertsclubrocket.svg"}
+                imageUrl={"/images/dev-coding-expertsclub.webp"}
+                btnText={"QUERO CONHECER"}
+
               />
             </TabsContent>
             <TabsContent value="discover">
               <TabCourses
                 href={"#"}
                 colors={{
-                  background: "$colors$rocketseat-mid",
-                  color: "$colors$white",
+                  background: "$colors$discover-mid",
                 }}
-                prerequisites={"O Discover é 100% gratuito e você pode começar agora"}
+                prerequisites={
+                  "O Discover é 100% gratuito e você pode começar agora"
+                }
                 text={
-                  "São mais de 500 aulas gratuitas para você aprender programação do zero, com foco em desenvolvimento web. Você vai encontrar aulas para dominar HTML, CSS, JavaScript, HTTP, Forms, Ferramentas, DOM e muito mais."
+                  "Você vai encontrar aulas para dominar HTML, CSS, JavaScript, HTTP, Forms, Ferramentas, DOM e muito mais."
                 }
                 title={
-                  "Crie uma base sólida na programação para decolar rumo a desafios maiores"
+                  "Comece a programar do zero gratuitamente"
                 }
-                logo={"/images/discover.webp"}
-                rocketUrl={"/images/discoverrocket.svg"}
+                imageUrl={"/images/dev-coding-discover.webp"}
+                btnText={"QUERO CONHECER"}
+
+              />
+            </TabsContent>
+            <TabsContent value="explorer">
+              <TabCourses
+                href={"#"}
+                colors={{
+                  background: "#42d3ff",
+                  color: "$colors$gray-900"
+                }}
+                prerequisites={
+                  "O Discover é 100% gratuito e você pode começar agora"
+                }
+                text={
+                  "Aprenda as habilidades para ser um destaque no mercado da programação e acessar sua primeira oportunidade ainda nesse ano."
+                }
+                title={
+                  "Acesse sua primeira vaga em programação"
+                }
+                imageUrl={"/images/dev-coding-explorer.webp"}
+                btnText={"SAIBA COMO"}
+
               />
             </TabsContent>
           </Tabs>

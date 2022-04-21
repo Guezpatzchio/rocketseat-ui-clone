@@ -35,13 +35,13 @@ export const Button = css({
       css: {
         border: "1px solid $$backgroundColor",
         background: "transparent",
-      }
-    }
+      },
+    },
   ],
 
   variants: {
     outlined: {
-      true: {}
+      true: {},
     },
     loading: {
       true: {
@@ -62,16 +62,19 @@ export const Button = css({
         fontSize: "$sm",
       },
       lg: {
-        height: "$12",
-        padding: "0 $8",
-        fontSize: "$sm",
+        height: "100%",
+        maxHeight: "56px",
+        fontSize: "16px",
+        fontWeight: "700",
+        lineHeight: "19px",
+        padding: "15px 16px 15px 24px",
       },
     },
     variant: {
       primary: {
         $$backgroundColor: "$colors$rocketseat-mid",
         $$color: "$colors$white",
-        $$hoverColor: "$colors$rocketseat-light",
+        $$hoverColor: "$colors$rocketseat-dark",
       },
       secondary: {
         $$backgroundColor: "$colors$shape-secondary",

@@ -12,13 +12,6 @@ export function Slogan() {
           <br />
           aprendizado contínuo em programação
         </h3>
-        <p>
-          Não importa se você está começando do zero ou se tem décadas de
-          experiência como dev.
-          <br />
-          Você vai encontrar o caminho para estar entre os melhores e se manter
-          atualizado nesse universo dinâmico.
-        </p>
       </SloganComponent.Content>
     </SloganComponent.Root>
   );

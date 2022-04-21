@@ -19,14 +19,6 @@ export const Content = styled("div", {
     fontWeight: "700",
     color: "$text-title",
   },
-
-  p: {
-    marginTop: "24px",
-    lineHeight: "26px",
-    fontWeight: "400",
-    color: "$text-title",
-    fontSize: "16px",
-  },
 });
 
 export const Line = styled("div", {

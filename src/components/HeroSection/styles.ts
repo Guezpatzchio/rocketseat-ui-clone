@@ -23,17 +23,6 @@ export const Content = styled("div", {
   justifyContent: "center",
   textAlign: "center",
 
-  button: {
-    $$hoverColor: "$colors$rocketseat-dark",
-
-    height: "100%",
-    maxHeight: "56px",
-    fontSize: "16px",
-    fontWeight: "700",
-    lineHeight: "19px",
-    padding: "15px 16px 15px 24px",
-  },
-
   ".buttonIcon": {
     marginLeft: "24px",
   },
